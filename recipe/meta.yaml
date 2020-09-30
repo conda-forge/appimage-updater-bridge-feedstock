@@ -11,7 +11,7 @@ source:
 
 
 build:
-  number: 0
+  number: 1
   skip: true  # [win or osx]
 
 requirements:
@@ -32,20 +32,20 @@ requirements:
     - qt
 
 test:
-  files:
-    - test.py
-  requires:
-    - python
-    - pyside2
-    - {{ cdt('mesa-libgl-devel') }}  # [linux]
-    - {{ cdt('mesa-dri-drivers') }}  # [linux]
-    - {{ cdt('libselinux') }}  # [linux]
-    - {{ cdt('libxdamage') }}  # [linux]
-    - {{ cdt('libxxf86vm') }}  # [linux]
-    - {{ cdt('libxext') }}     # [linux]
+  # files:
+  #   - test.py
+  # requires:
+  #   - python
+  #   - pyside2
+  #   - {{ cdt('mesa-libgl-devel') }}  # [linux]
+  #   - {{ cdt('mesa-dri-drivers') }}  # [linux]
+  #   - {{ cdt('libselinux') }}  # [linux]
+  #   - {{ cdt('libxdamage') }}  # [linux]
+  #   - {{ cdt('libxxf86vm') }}  # [linux]
+  #   - {{ cdt('libxext') }}     # [linux]
   commands:
     - test -f ${PREFIX}/plugins/libAppImageUpdaterBridge.so
-    - QT_DEBUG_PLUGINS=1 python test.py
+    # - QT_DEBUG_PLUGINS=1 python test.py
 
 about:
   home: https://github.com/antony-jr/AppImageUpdaterBridge
