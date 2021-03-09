@@ -1,5 +1,5 @@
 {% set name = "appimage-updater-bridge" %}
-{% set version = "1.1.9" %}
+{% set version = "2.0.0" %}
 
 package:
   name: {{ name }}
@@ -7,11 +7,11 @@ package:
 
 source:
   url: https://github.com/antony-jr/AppImageUpdaterBridge/archive/v{{ version }}.tar.gz
-  sha256: 9dcb8dace1d6e385794d9e859f1a9e228c9bdfac649d2f2fcb1641d1a3177f8a
+  sha256: 529ec0acfc834b544b09f70f1873ba3411e8f151c6248f28d59c07f86f72e2a1
 
 
 build:
-  number: 1
+  number: 0
   skip: true  # [win or osx]
 
 requirements:
@@ -51,7 +51,7 @@ about:
   home: https://github.com/antony-jr/AppImageUpdaterBridge
   license: BSD-3-Clause
   license_file: LICENSE
-  summary: 'AppImage Updater Bridge is a delta updater based on the zsync algorithm'
+  summary: AppImage Updater Bridge is a delta updater based on the zsync algorithm
   description: |
     AppImage Updater Bridge is a delta updater based on the zsync algorithm for the AppImage format , 
     Using this library you can delta update any AppImage file , That is , 
