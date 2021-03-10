@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/antony-jr/AppImageUpdaterBridge/archive/v{{ version }}.tar.gz
-  sha256: 529ec0acfc834b544b09f70f1873ba3411e8f151c6248f28d59c07f86f72e2a1
+  sha256: 7ca47d659bb504f188a9683775249febb970624e157684d6750f5d77b562f8af
 
 
 build:
