@@ -44,7 +44,7 @@ test:
     - {{ cdt('libxxf86vm') }}  # [linux]
     - {{ cdt('libxext') }}     # [linux]
   commands:
-    - test -f ${PREFIX}/plugins/libAppImageUpdaterBridge.so
+    - test -f ${PREFIX}/plugins/libQAppImageUpdate.so
     - QT_DEBUG_PLUGINS=1 python test.py
 
 about:
