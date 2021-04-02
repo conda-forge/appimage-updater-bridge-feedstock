@@ -1,5 +1,5 @@
 {% set name = "appimage-updater-bridge" %}
-{% set version = "2.0.1" %}
+{% set version = "2.0.2" %}
 
 package:
   name: {{ name }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/antony-jr/AppImageUpdaterBridge/archive/v{{ version }}.tar.gz
-  sha256: 25dd72b5d4a7541d3c0980b751ee9fc5f11c50ba5b98e13c819047a721d08ae2
+  sha256: 55b20b1da947aaaa11e7b4565ecd761dde0369bba548c25a740321e671f50068
 
 
 build:
