@@ -36,7 +36,7 @@ test:
     - test.py
   requires:
     - python ==3.10
-    - pyside2
+    - pyside2 ==5.15
     - {{ cdt('mesa-libgl-devel') }}  # [linux]
     - {{ cdt('mesa-dri-drivers') }}  # [linux]
     - {{ cdt('libselinux') }}  # [linux]
