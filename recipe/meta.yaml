@@ -23,6 +23,7 @@ requirements:
     - {{ cdt('libxdamage') }}  # [linux]
     - {{ cdt('libxxf86vm') }}  # [linux]
     - {{ cdt('libxext') }}     # [linux]
+    - python ==3.10
     - cmake
     - ninja
   host:
@@ -34,7 +35,7 @@ test:
   files:
     - test.py
   requires:
-    - python =='3.10.* *_cpython'
+    - python ==3.10
     - pyside2
     - {{ cdt('mesa-libgl-devel') }}  # [linux]
     - {{ cdt('mesa-dri-drivers') }}  # [linux]
