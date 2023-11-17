@@ -34,8 +34,8 @@ test:
   files:
     - test.py
   requires:
-    - python <3.11
-    - pyside2 =5.15
+    - python =='3.10.* *_cpython'
+    - pyside2
     - {{ cdt('mesa-libgl-devel') }}  # [linux]
     - {{ cdt('mesa-dri-drivers') }}  # [linux]
     - {{ cdt('libselinux') }}  # [linux]
