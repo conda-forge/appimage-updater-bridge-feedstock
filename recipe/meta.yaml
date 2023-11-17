@@ -25,7 +25,6 @@ requirements:
     - {{ cdt('libxext') }}     # [linux]
     - cmake
     - ninja
-    - wget
   host:
     - qt-main
   run:
@@ -35,8 +34,8 @@ test:
   files:
     - test.py
   requires:
-    - python *
-    - pyside2
+    - python <3.11
+    - pyside2 =5.15
     - {{ cdt('mesa-libgl-devel') }}  # [linux]
     - {{ cdt('mesa-dri-drivers') }}  # [linux]
     - {{ cdt('libselinux') }}  # [linux]
