@@ -17,7 +17,6 @@ AppImage Updater Bridge is a delta updater based on the zsync algorithm for the 
 Using this library you can delta update any AppImage file , That is ,
 Only download the binary data which you need to get the latest version , Therefore saving your time and internet.
 
-
 Current build status
 ====================
 
